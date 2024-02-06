@@ -1,7 +1,7 @@
-import { addDoc, collection, getDoc } from "firebase/firestore"
+import { addDoc, collection } from "firebase/firestore"
 import { db } from "../firebass-config"
 import "./add.css"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Add = () => {
 
@@ -9,14 +9,12 @@ const Add = () => {
 
     let record = collection(db, "jigar")
 
-    console.log(record);
-
     const handleSubmit = async (e) => {
         e.preventDefault()
 
         try {
             await addDoc(record, {
-                list: list
+                name: list
             })
             alert("Record Add")
             setList('')
@@ -45,6 +43,19 @@ const Add = () => {
                                     </div>
                                 </form>
                             </div>
+                        </div>
+                        <div className="view-data">
+                            <table border={1}>
+                                {/* {
+                                    record.map((val) => {
+                                        return (
+                                            <tr>
+                                                <td>{val.name}</td>
+                                            </tr>
+                                        )
+                                    })
+                                } */}
+                            </table>
                         </div>
                     </div>
                 </div>
