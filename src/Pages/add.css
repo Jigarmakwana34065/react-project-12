@@ -20,6 +20,7 @@ ul {
   padding: 60px;
   margin: 40px auto;
   background-color: #f8f7f3;
+  border-radius: 20px;
 }
 .crude-section .container .row .main .header {
   padding: 20px 0px;
@@ -60,7 +61,7 @@ ul {
 }
 .crude-section .container .row .main .add-data .form form .btn button i {
   font-size: 29px;
-  color: green;
+  color: #5a0808;
 }
 .crude-section .container .row .main .view-data {
   padding: 15px 0px;
