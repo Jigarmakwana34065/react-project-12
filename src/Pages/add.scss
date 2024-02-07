@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0px auto;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+.crude-section {
+    .container {
+        .row {
+            .main {
+                max-width: 45%;
+                padding: 60px;
+                margin: 40px auto;
+                background-color: #f8f7f3;
+
+                .header {
+                    padding: 20px 0px;
+
+                    h2 {
+                        color: rgb(90, 8, 8);
+                        font-size: 38px;
+                        text-transform: capitalize;
+                        text-align: center;
+                    }
+                }
+
+                .add-data {
+                    .form {
+                        form {
+                            display: flex;
+                            flex-wrap: wrap;
+
+                            .int {
+                                width: 90%;
+
+                                input {
+                                    width: 100%;
+                                    padding: 9px;
+                                    border: 0px;
+                                    border-bottom: 2px solid #833e00;
+                                    background-color: #833e0000;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    text-transform: capitalize;
+                                    color: #5a0808;
+                                }
+                            }
+
+                            .btn {
+                                width: 10%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                button {
+                                    border: 0;
+                                    cursor: pointer;
+
+                                    i {
+                                        font-size: 29px;
+                                        color: green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .view-data {
+                    padding: 15px 0px;
+
+                    ul {
+                        li {
+                            padding: 12px;
+                            margin: 5px 0px;
+                            background-color: #c3a282;
+                            color: white;
+                            border-radius: 12px;
+                            display: flex;
+                            justify-content: space-between;
+
+                            p {
+                                font-size: 18px;
+                                font-weight: 600;
+                                text-transform: capitalize;
+                                padding: 0px 5px;
+                            }
+
+                            button {
+                                border: 0;
+                                padding: 4px;
+                                background-color: #ff000000;
+
+                                i {
+                                    color: #5a0808;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
